@@ -1,7 +1,7 @@
 
 body{
-   
-    background-image: url(/2.jpg);
+  background-image: url('./2.jpg');
+    /* background-image: url(/2.jpg); */
     background-size: cover;
     background-position: center;
     width: 100%;
