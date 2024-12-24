@@ -60,35 +60,26 @@ body {
 
 }
 
-/* .loginPageUlLi{
-    background-color: #ff9100;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 3px;
-} */
+.LanguageButton{
+  /* background-color: #ff9100; */
+  /* border: 1px solid #333; */
+  /* border-radius: 103px; */
+  list-style: none;
+  /* display: inline-block; */
+  margin:  10px;
+  position: relative;
+  
+ 
+}
 
 
-/* .signupPageUlLi{
-    background-color: #ff9100;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 3px;
-} */
 
-
-/* 
-.homePageUlLi{
-    background-color: #ff9100;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 3px;
-} */
 
 .ColorPageUlLi {
   background-color: #ff9100;
   border: 1px solid #333;
   border-radius: 10px;
-  padding: 4px;
+  padding: 4px; 
 }
 
 
@@ -115,7 +106,7 @@ body {
 .whoAreYou {
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 20%;
   /* transform: translateY(-50%); */
   text-align: center;
   color: #ffffff;
@@ -138,10 +129,13 @@ body {
 
 .cards {
   /* padding: 2rem 1rem; */
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
+  display: inline;
+  /* justify-self: unset; */
   align-items: center;
-  /* background-position: center;
+    /* background-position: center;
   position: absolute; */
 
 
@@ -152,8 +146,8 @@ body {
 .card1 {
   border: 2px rgb(255, 123, 0) solid;
 
-  width: 300px;
-  height: 200px;
+  width: 50%;
+  height: 180px;
   border-radius: 10px;
   display: inline-block;
   /* display: inline-flex; */
@@ -174,8 +168,10 @@ body {
 .card2 {
   border: 2px rgb(255, 123, 0) solid;
 
-  width: 300px;
-  height: 200px;
+  /* width: 300px;
+  height: 200px; */
+  width: 50%;
+  height: 180px;
   border-radius: 10px;
   display: inline-block;
   /* display: inline-flex; */
@@ -206,7 +202,15 @@ body {
     align-items: center; */
   background-color: #ffffffa0;
   /* border: 1px red solid; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
 
+.card_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

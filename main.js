@@ -121,7 +121,8 @@ const translations = {
         navbar2: "About us",
         navbar3: "login",
         navbar4: "signup",
-
+        Excavator : "Excavator",
+        LorryTruck : "Lorry truck",
     },
     ar: {
         title: "عن ماذا تبحث؟ (جرافة او ناقلة؟)",
@@ -129,6 +130,8 @@ const translations = {
         navbar2: "من نحن",
         navbar3: "تسجيل الدخول",
         navbar4: "انشاء حساب",
+        Excavator : "حفارات",
+        LorryTruck : "ناقلة",
 
     }
 };
@@ -139,6 +142,8 @@ const navH = document.getElementById("navH");
 const navA = document.getElementById("navA");
 const navL = document.getElementById("navL");
 const navS = document.getElementById("navS");
+const Excavator = document.getElementById("Excavator");
+const LorryTruck = document.getElementById("LorryTruck");
 
 // تغيير اللغة عند اختيار المستخدم
 langSelector.addEventListener("change", (event) => {
@@ -153,6 +158,8 @@ const setLanguage = (language) => {
         navA.innerText = translations.ar.navbar2;
         navL.innerText = translations.ar.navbar3;
         navS.innerText = translations.ar.navbar4;
+        Excavator.innerText = translations.ar.Excavator;
+        LorryTruck.innerText = translations.ar.LorryTruck;
 
     } else if (language === "en") {
         theQuestion.innerText = translations.en.title;
@@ -160,6 +167,8 @@ const setLanguage = (language) => {
         navA.innerText = translations.en.navbar2;
         navL.innerText = translations.en.navbar3;
         navS.innerText = translations.en.navbar4;
+        Excavator.innerText = translations.en.Excavator;
+        LorryTruck.innerText = translations.en.LorryTruck;
     }
 };
 
