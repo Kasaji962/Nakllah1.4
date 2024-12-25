@@ -116,16 +116,21 @@
 
 const translations = {
     en: {
-        title: "What are you looking for? (Excavator or truck?)",
+        title: "Nakllah",
+        Q: "What are you looking for? (Excavator or truck?)",
         navbar1: "Home",
         navbar2: "About us",
         navbar3: "login",
         navbar4: "signup",
         Excavator : "Excavator",
         LorryTruck : "Lorry truck",
+
+        h2AboutUsPage: "What are you looking for? (Excavator or truck?)",
+
     },
     ar: {
-        title: "عن ماذا تبحث؟ (جرافة او ناقلة؟)",
+        title: "نقلة",
+        Q: "عن ماذا تبحث؟ (جرافة او ناقلة؟)",
         navbar1: "الرئيسية",
         navbar2: "من نحن",
         navbar3: "تسجيل الدخول",
@@ -133,10 +138,15 @@ const translations = {
         Excavator : "حفارات",
         LorryTruck : "ناقلة",
 
+        h2AboutUsPage: "What are you looking for? ()",
+
+
     }
 };
 
 const langSelector = document.querySelector("select");
+
+const title = document.getElementById("title");
 const theQuestion = document.getElementById("TheQustion");
 const navH = document.getElementById("navH");
 const navA = document.getElementById("navA");
@@ -144,6 +154,8 @@ const navL = document.getElementById("navL");
 const navS = document.getElementById("navS");
 const Excavator = document.getElementById("Excavator");
 const LorryTruck = document.getElementById("LorryTruck");
+
+// const h2AU = document.getElementById("h2AU")
 
 // تغيير اللغة عند اختيار المستخدم
 langSelector.addEventListener("change", (event) => {
@@ -153,7 +165,8 @@ langSelector.addEventListener("change", (event) => {
 // دالة لتغيير النص بناءً على اللغة
 const setLanguage = (language) => {
     if (language === "ar") {
-        theQuestion.innerText = translations.ar.title;
+        title.innerText = translations.ar.title;
+        theQuestion.innerText = translations.ar.Q;
         navH.innerText = translations.ar.navbar1;
         navA.innerText = translations.ar.navbar2;
         navL.innerText = translations.ar.navbar3;
@@ -161,20 +174,25 @@ const setLanguage = (language) => {
         Excavator.innerText = translations.ar.Excavator;
         LorryTruck.innerText = translations.ar.LorryTruck;
 
+        // h2AU.innerText = translations.ar.h2AboutUsPage;
+
     } else if (language === "en") {
-        theQuestion.innerText = translations.en.title;
+        title.innerText = translations.en.title;
+        theQuestion.innerText = translations.en.Q;
         navH.innerText = translations.en.navbar1;
         navA.innerText = translations.en.navbar2;
         navL.innerText = translations.en.navbar3;
         navS.innerText = translations.en.navbar4;
         Excavator.innerText = translations.en.Excavator;
         LorryTruck.innerText = translations.en.LorryTruck;
+
+        // h2AU.innerText = translations.en.h2AboutUsPage;
     }
 };
 
 // تحديد اللغة الافتراضية عند تحميل الصفحة
 document.addEventListener("DOMContentLoaded", () => {
-    const defaultLanguage = langSelector.value || "en";
+    const defaultLanguage = langSelector.value || "ar";
     setLanguage(defaultLanguage);
 });
 
